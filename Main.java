@@ -44,7 +44,7 @@ class Main {
      * Print out the second student's name, age, and gpa
      */
 
-    // create default student object and print out info
+    // create default Student object and print out info
 
 
     // create second student object with your constructor and print out info
@@ -65,12 +65,12 @@ class Main {
      * one should be an int, one should be a double and one should be a boolean
      *
      * Create a new method for the car class: one should be called 
-     * public void horn 
-     * and it should take a String parameter and just print it out. So, for example
-     * if I have a Car object called myCar, I could call myCar.horn("beep beep")
+     * public void horn and it should take a String parameter and just print it out. 
+     * So, for example if I have a Car object called myCar, I could call 
+     * myCar.horn("beep beep");
      * and it would print out "beep beep".
      *
-     * Create a new Car object and call your new horn method 
+     * Create a new Car object and call your new horn method with "beep beep" or any other String
      *
      * The second part is to call your object's getType method and see if it returns "Truck"
      */
@@ -117,9 +117,11 @@ class Main {
 
 
 
-    // *** OPTIONAL *** Figure out how to implement square root
-    // *** not extra credit, just fun and challening        ***
-    // *** only do this part if you are done all the others ***
+    // *** OPTIONAL *** Implement your own square root method ***
+    // *** not extra credit, just fun and challening          ***
+    // *** only do this part if you are done all the others   ***
+    // *** Step 1: use a built-in method from the Math class  ***
+    // *** Step 2: Try to build your own                      ***
 
     // End of problem 3
   }
