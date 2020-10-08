@@ -2,6 +2,8 @@ class MyMath {
 
   public static int square(int inpt) {
 
+    // fill in this method so that it returns the square of inpt instead of 0
+
     return 0;
 
   }
