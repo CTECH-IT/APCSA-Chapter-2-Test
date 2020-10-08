@@ -7,49 +7,44 @@ class Main {
     // Do not edit the following lines. They just run the tests
     System.out.println("\n\nWelcome to the Unit 2 Test!");
     System.out.println("You have 4 coding problems to answer.\n");
-    System.out.println("***************************\n");
-    System.out.println("*** Starting problem 1! ***\n");
-    System.out.println("***************************\n");
+    System.out.println("***************************");
+    System.out.println("*** Starting problem 1! ***");
+    System.out.println("***************************");
     problem1(); // 25 points
     System.out.println("\n");
-    System.out.println("***************************\n");
-    System.out.println("*** Starting problem 2! ***\n");
-    System.out.println("***************************\n");
+    System.out.println("***************************");
+    System.out.println("*** Starting problem 2! ***");
+    System.out.println("***************************");
     problem2(); // 25 points
     System.out.println("\n");
-    System.out.println("***************************\n");
-    System.out.println("*** Starting problem 3! ***\n");
-    System.out.println("***************************\n");
+    System.out.println("***************************");
+    System.out.println("*** Starting problem 3! ***");
+    System.out.println("***************************");
     problem3(); // 25 points
     System.out.println("\n");
-    System.out.println("***************************\n");
-    System.out.println("*** Starting problem 4! ***\n");
-    System.out.println("***************************\n");
+    System.out.println("***************************");
+    System.out.println("*** Starting problem 4! ***");
+    System.out.println("***************************");
     problem4(); // 25 points    
 
   }
 
   static public void problem1() {
-    /*
-     * In the menu to your left, there should be a list of files
-     * If not, click the little icon that looks like a piece of paper.
-     *
-     * Click on the file "Student.java" and inspect the class structure
-     * In the space below, create a Student object and assign it to a variable
-     * Print out the default student's name, age, and gpa
-     * 
-     * In the Student.java file, create a NEW constructor (don't change the existing one)
-     * that takes name, age, and gpa as parameters and sets them properly
-     * In the space below, create a second Student object using your new constructor
-     * Print out the second student's name, age, and gpa
-     */
+    /* 
+    * Ask the user for their first and last name with a space in between
+    * Print out "Hello, [firstname]. Your last name is [lastname]. Welcome to APCSA!"
+    */
 
-    // create default Student object and print out info
+    Scanner s = new Scanner(System.in);
+    System.out.println("Please enter your first name and last name separated by a space:");
+    String fullName = s.nextLine();  // Read the user input into the variable "fullName"
+
+    // put your code here
 
 
-    // create second student object with your constructor and print out info
 
 
+    s.close();
     // End of problem 1
   }
 
@@ -58,14 +53,78 @@ class Main {
      * In the menu to your left, there should be a list of files
      * If not, click the little icon that looks like a piece of paper.
      *
+     * Click on the file "Student.java" and inspect the class structure
+     *
+     * Part 1:
+     * In the space below, create a Student object using the default
+     * constructor and assign it to a variable
+     * Print out the default student's name, age, and gpa
+     * 
+     * Part 2:
+     * In the space below, create a Student object using the OVERLOADED
+     * constructor that takes three parameters and assign it to a variable
+     * Print out the default student's name, age, and gpa
+     */
+
+    // create a Student object using default constructor and print out info
+
+
+    // create second student object with overloaded constructor and print out info
+
+
+    // End of problem 2
+  }
+
+
+  static public void problem3() {
+    /*
+     * In the menu to your left, there should be a list of files
+     * If not, click the little icon that looks like a piece of paper.
+     *
+     * Click on the file "MyMath.java" and inspect the methods
+     * You'll notice that the "square" method doesn't do anything.
+     * Your job is to fill in the square function so that it works properly
+     * 
+     * In the space below, create a variable and set it 
+     * to a random number between 100 and 200
+     * 
+     * Create a new variable and use the "MyMath.square" method to set the new
+     * variable to the square of the original random number.
+     *
+     * Print out both the original random number between 100-200 and the square of it.
+    */
+
+    // create a new variable
+
+    // set the variable to a random number between 100 and 200
+
+    // create another new variable and set it to the square of the original
+    // using MyMath.square()
+
+    // print out both the original number and the square of int
+
+
+
+    // *** OPTIONAL *** Figure out how to implement square root
+    // *** not extra credit, just fun and challening        ***
+    // *** only do this part if you are done all the others ***
+    // *** Step 1: use a built-in method from the Math class***
+    // *** Step 2: Try to build your own                    ***
+
+    // End of problem 3
+  }
+
+
+  static public void problem4() {
+
+    /*
+     * In the menu to your left, there should be a list of files
+     * If not, click the little icon that looks like a piece of paper.
+     *
      * Click on the file "Car.java" and inspect the class
-     * You'll notice that there aren't many methods or properties.
+     * You'll notice that there is a "horn" method that doesn't do anything.
+     * Fill in the "horn" method so that it prints out the sound parameter
      *
-     * Create 3 additional properties for the car class: 
-     * one should be an int, one should be a double and one should be a boolean
-     *
-     * Create a new method for the car class: one should be called 
-     * public void horn and it should take a String parameter and just print it out. 
      * So, for example if I have a Car object called myCar, I could call 
      * myCar.horn("beep beep");
      * and it would print out "beep beep".
@@ -84,65 +143,6 @@ class Main {
     // print out whether the result equals "Truck"
 
 
-
-    // End of problem 2
-  }
-
-
-  static public void problem3() {
-    /*
-     * In the menu to your left, there should be a list of files
-     * If not, click the little icon that looks like a piece of paper.
-     *
-     * Click on the file "MyMath.java" and inspect the methods
-     * You'll notice that the "square" method doesn't do anything.
-     * Your job is to fill in the square function so that it works properly
-     * 
-     * In the space below, initialize a variable to 0.0
-     * Then set the variable to a random number between 100 and 200
-     * 
-     * Create a new variable and use the "square" method to set the new
-     * variable to the square of the original random number.
-     *
-     * Print out both the original random number between 100-200 and the square of it.
-    */
-
-    // initialize a variable to 0.0
-
-    // set the variable to a random number between 100 and 200
-
-    // create a new variable and set it to the square of the original using your method
-
-    // print out both the original number and the square of int
-
-
-
-    // *** OPTIONAL *** Implement your own square root method ***
-    // *** not extra credit, just fun and challening          ***
-    // *** only do this part if you are done all the others   ***
-    // *** Step 1: use a built-in method from the Math class  ***
-    // *** Step 2: Try to build your own                      ***
-
-    // End of problem 3
-  }
-
-
-  static public void problem4() {
-    /* 
-    * Ask the user for their first and last name with a space in between
-    * Print out "Hello, [firstname]. Your last name is [lastname]. Welcome to APCSA!"
-    */
-
-    Scanner s = new Scanner(System.in);
-    System.out.println("Please enter your first name and last name separated by a space:");
-    String fullName = s.nextLine();  // Read the user input into the variable "fullName"
-
-    // put your code here
-
-
-
-
-    s.close();
     // End of problem 4
 
   }
